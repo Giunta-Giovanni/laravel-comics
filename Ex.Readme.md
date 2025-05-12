@@ -15,13 +15,13 @@ __MILESTONE__
 - Configurazione ambiente (.env, database se necessario).√
 - Avvio del server locale (php artisan serve).√
 
-# Milestone 2 - Creazione del layout principale
-- Creazione file Blade resources/views/layouts/app.blade.php.
-- Inserimento struttura HTML base (doctype, head, body).
-- Includere gli elementi comuni tramite partials:
-- resources/views/partials/header.blade.php
-- resources/views/partials/footer.blade.php
-- Utilizzo della direttiva @yield('content') per gestire i contenuti dinamici.
+# Milestone 2 - Creazione del layout principale√
+- Creazione file Blade resources/views/layouts/app.blade.php.√
+- Inserimento struttura HTML base (doctype, head, body).√
+- Includere gli elementi comuni tramite partials:√
+    1. resources/views/partials/header.blade.php√
+    2. resources/views/partials/footer.blade.php√
+- Utilizzo della direttiva @yield('content') per gestire i contenuti dinamici.√
 
 # Milestone 3 - Creazione della rotta principale
 - Aggiunta della rotta nel file routes/web.php per la pagina principale /comics.
