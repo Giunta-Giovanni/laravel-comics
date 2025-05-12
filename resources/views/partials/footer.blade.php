@@ -1,9 +1,10 @@
 <?php
     $categoryLinks =config('categoryLinks');
-
-
+    $category1 = $categoryLinks['category1'];
+    $category2 = $categoryLinks['category2'];
+    $category3 = $categoryLinks['category3'];
+    $category4 = $categoryLinks['category4'];
 ?>
-@dd($categoryLinks['category1'])
 
 <footer>
     <div class="footer-link">
@@ -15,18 +16,56 @@
                 <div class="link-col">
                     <h5>DC COMICS</h5>
                     {{-- <BoxLink linkCategory={appCategory2} /> --}}
-                    {{-- <x-boxlink>
-                    </x-boxlink> --}}
+                    {{-- @dd($category1) --}}
+                    <ul>
+                        @foreach ($category1 as $link)
+                            <x-boxlink>
+                                <x-slot:text>{{$link['text']}}</x-slot>
+                                <x-slot:url>{{$link['url']}}</x-slot>
+                            </x-boxlink>
+                        @endforeach
+
+                    </ul>
+                        
+
 
                     <h5>SHOP</h5>
+                    
                     {{-- <BoxLink linkCategory={appCategory3} /> --}}
+                                        <ul>
+                        @foreach ($category2 as $link)
+                            <x-boxlink>
+                                <x-slot:text>{{$link['text']}}</x-slot>
+                                <x-slot:url>{{$link['url']}}</x-slot>
+                            </x-boxlink>
+                        @endforeach
+
+                    </ul>
                 </div>
                 <div class="link-col">
                     <h5>DC</h5>
                     {{-- <BoxLink linkCategory={appCategory1} /> --}}
+                                        <ul>
+                        @foreach ($category3 as $link)
+                            <x-boxlink>
+                                <x-slot:text>{{$link['text']}}</x-slot>
+                                <x-slot:url>{{$link['url']}}</x-slot>
+                            </x-boxlink>
+                        @endforeach
+
+                    </ul>
                 </div>
                 <div class="link-col">
                     <h5>SITES</h5>
+                    <ul>
+                        @foreach ($category4 as $link)
+                            <x-boxlink>
+                                <x-slot:text>{{$link['text']}}</x-slot>
+                                <x-slot:url>{{$link['url']}}</x-slot>
+                            </x-boxlink>
+                        @endforeach
+
+                    </ul>
                     {{-- <BoxLink linkCategory={appCategory4} /> --}}
                 </div>
             </div>

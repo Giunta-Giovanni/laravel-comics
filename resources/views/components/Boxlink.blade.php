@@ -1,7 +1,3 @@
-<div>
-    <ul>
         <li>
-            <a href={link.url}>{link.text}</a>
+            <a href={{$url}}>{{$text}}</a>
         </li>
-    </ul >
-</div>
