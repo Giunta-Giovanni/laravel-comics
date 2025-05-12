@@ -31,27 +31,27 @@ __MILESTONE__
 - Creazione file config/comics.php e inserimento array fornito.√
 <!-- - Recupero dati con config('comics') all’interno del controller. -->
 
-# Milestone 5 - Visualizzazione lista fumetti
+# Milestone 5 - Visualizzazione lista fumetti√
 - Ciclo @foreach per stampare i fumetti.√
-- Strutturazione HTML/CSS base per layout a griglia.
+- Strutturazione HTML/CSS base per layout a griglia.√
 
-# Milestone 6 - Integrazione e compilazione SASS
-- Installazione e configurazione Bootstrap.
-- Compilazione con npm run dev.
-- Styling della griglia fumetti, header e footer.
+# Milestone 6 - Integrazione e compilazione SASS√
+- Installazione e configurazione Bootstrap.√
+- Compilazione con npm run dev.√
+- Styling della griglia fumetti, header e footer.√
 
 # Bonus 1 – Pagine istituzionali, creazione di pagine statiche
-- Es: About, Contatti, Chi siamo.
-- Creazione rotte dedicate e view Blade che estendono layouts.app.
+- Es: About, Contatti, Chi siamo.√
+- Creazione rotte dedicate e view Blade che estendono layouts.app.√
 
 # Bonus 2 – Componenti riutilizzabili - creazione componenti Blade
-- Es: @component('components.card', ['comic' => $comic])
-- Posizionare il componente in resources/views/components/card.blade.php.
-- Utilizzo del componente nella view principale e, se utile, nelle altre pagine.
+- Es: @component('components.card', ['comic' => $comic])√
+- Posizionare il componente in resources/views/components/card.blade.php.√
+- Utilizzo del componente nella view principale e, se utile, nelle altre pagine.√
 
 # Facoltativo – UX migliorata
-- Animazioni CSS leggere su hover.
-- Responsive design per griglia fumetti.
+- Animazioni CSS leggere su hover.√
+- Responsive design per griglia fumetti.√
 
 
 

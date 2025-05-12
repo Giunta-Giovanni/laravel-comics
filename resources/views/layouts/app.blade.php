@@ -20,6 +20,13 @@
         <section class="cards-section">
             @yield('cards_section')
         </section>
+
+        {{-- sezione home --}}
+        <section class="home-section">
+            @yield('home_section')
+        </section>
+
+
         {{-- sezione hub  --}}
         <section class="hub-section">
             @yield('hub_section')

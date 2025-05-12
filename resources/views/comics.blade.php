@@ -6,16 +6,21 @@
     {{-- card section --}}
     @section('cards_section')
     <div class="container">
+        <h2 class="cards-title">CURRENT SERIES</h2>
   {{-- row card  --}}
         <div class="bk-box-card">
 
             {{-- ciclo sulle card --}}
             @foreach ($comics as $comic)
-
                 {{-- {{col card}} --}}
                     <x-card>
                         <x-slot:title>{{ $comic['series'] }}</x-slot>
                         <x-slot:image>{{ $comic['thumb'] }}</x-slot>
+                        <x-slot:date>{{ $comic['sale_date'] }}</x-slot>
+                        <x-slot:type>{{ $comic['type'] }}</x-slot>
+                        <x-slot:booktitle>{{ $comic['title'] }}</x-slot>
+                        <x-slot:price>{{ $comic['price'] }}</x-slot>
+
                     </x-card>
 
             @endforeach

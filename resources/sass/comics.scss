@@ -39,7 +39,7 @@ button {
     flex-wrap: wrap;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav li {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
@@ -47,11 +47,10 @@ button {
     padding: 18px;
     text-transform: uppercase;
     cursor: pointer;
-
 }
 
 /* Navbar Effetto Hover */
-.navbar-nav .nav-link:hover {
+.navbar-nav a:hover {
     color: #007bff;
 }
 
@@ -74,10 +73,19 @@ button {
 
 /*********** CARD SECTION ***********/
 .cards-section {
-    padding: 2rem 0;
     background-color: #1c1c1c;
 }
 
+.cards-title {
+    color: white;
+    background-color: #007bff;
+    width: 280px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+    position: relative;
+    top: -1rem;
+}
 
 .bk-box-card {
     display: flex;
@@ -85,22 +93,61 @@ button {
     overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-
 }
 
 .bk-card {
     // background-color: white;
+    margin: 5px;
+    position: relative;
 }
 
 .bk-box-img {
     margin: 0 auto;
     width: 296px;
     height: 445px;
+    // test
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
 }
 
 .bk-box-img img {
     width: 100%;
     height: 100%;
+
+    //test
+    position: absolute;
+    top: 0px;
+    backface-visibility: hidden;
+}
+
+
+.bk-card-retro {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../public/img/footer-bg.jpg);
+    padding: 2rem;
+}
+
+.bk-card-retro p {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.bk-box-img:hover {
+    transform: rotateY(180deg);
+    transition: transform 2s;
+}
+
+.bk-box-img:hover .bk-card-retro {
+    display: block;
+    opacity: 1;
+    transform: rotateY(180deg);
+    transition: opacity 1s ease-in-out 0.5s;
+
 }
 
 .bk-body {
@@ -115,7 +162,7 @@ button {
 }
 
 .box-load-more {
-    padding-top: 2rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
 }

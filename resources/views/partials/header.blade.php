@@ -1,3 +1,8 @@
+<?php
+    $navlinks =config('navlink');
+?>
+
+{{-- @dd($navlinks) --}}
 <header class="d-flex justify-content-between align-items-center bg-light p-3">
     <div class="container">
         <div class="row">
@@ -7,7 +12,6 @@
                 </div>
             </div>
             <div class="col">
-                {{-- <NavBar navLinks={props.appNavLinks} /> --}}
                 <nav class="navbar navbar-expand-md p-0">
                     <button
                         class="navbar-toggler"
@@ -23,17 +27,12 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class=nav-link>home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class=nav-link>Comics</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class=nav-link>Movie</a>
-                            </li>
-                            
-
+                            @foreach ($navlinks as $navlink)
+                                <x-boxlink>
+                                    <x-slot:url>{{$navlink['url']}}</x-slot>
+                                    <x-slot:text>{{$navlink['text']}}</x-slot>
+                                </x-boxlink>
+                            @endforeach
                         </ul>
                     </div>
                 </nav>
