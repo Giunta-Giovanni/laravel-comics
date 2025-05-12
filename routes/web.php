@@ -3,5 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
-})->name('home');
+    $comics = config('comics');
+    return view('comics', compact('comics'));
+})->name('comics');
