@@ -1,3 +1,10 @@
+<?php
+    $categoryLinks =config('categoryLinks');
+
+
+?>
+@dd($categoryLinks['category1'])
+
 <footer>
     <div class="footer-link">
         <div class="container">
@@ -8,6 +15,8 @@
                 <div class="link-col">
                     <h5>DC COMICS</h5>
                     {{-- <BoxLink linkCategory={appCategory2} /> --}}
+                    {{-- <x-boxlink>
+                    </x-boxlink> --}}
 
                     <h5>SHOP</h5>
                     {{-- <BoxLink linkCategory={appCategory3} /> --}}
