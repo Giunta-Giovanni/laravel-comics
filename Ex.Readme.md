@@ -36,9 +36,8 @@ __MILESTONE__
 - Strutturazione HTML/CSS base per layout a griglia.
 
 # Milestone 6 - Integrazione e compilazione SASS
-- Installazione e configurazione Laravel Mix (se non già attivo).
-- Creazione file .scss personalizzato.
-- Compilazione con npm run dev o npm run build.
+- Installazione e configurazione Bootstrap.
+- Compilazione con npm run dev.
 - Styling della griglia fumetti, header e footer.
 
 # Bonus 1 – Pagine istituzionali, creazione di pagine statiche

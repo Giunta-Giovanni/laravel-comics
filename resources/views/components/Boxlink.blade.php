@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        <li>
+            <a href={link.url}>{link.text}</a>
+        </li>
+    </ul >
+</div>

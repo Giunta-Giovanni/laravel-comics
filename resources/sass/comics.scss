@@ -1,0 +1,369 @@
+// /* GENERAL */
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+
+/*********** HEADER ***********/
+/* Logo */
+.box-logo {
+    width: 45px;
+    margin: auto 0;
+}
+
+.dc-logo {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: #000;
+    padding: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+/* Navbar Effetto Hover */
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Effetto Active */
+.navbar-nav .act {
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+}
+
+/*********** HERO SECTION ***********/
+
+//hero section
+.hero-section {
+    background-color: red;
+    background-image: url('../../public/img/jumbotron.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*********** CARD SECTION ***********/
+.cards-section {
+    padding: 2rem 0;
+    background-color: #1c1c1c;
+}
+
+
+.bk-box-card {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+.bk-card {
+    // background-color: white;
+}
+
+.bk-box-img {
+    margin: 0 auto;
+    width: 296px;
+    height: 445px;
+}
+
+.bk-box-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.bk-body {
+    margin-top: 1rem;
+    // background-color: none;
+}
+
+.bk-body h5 {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(232, 226, 217);
+}
+
+.box-load-more {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.box-load-more button {
+    padding: 0.2rem;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(232, 226, 217);
+    background-color: #007bff;
+    transition: 0.3s ease-in-out;
+
+}
+
+.box-load-more button:hover {
+    background-color: #288bf4;
+}
+
+
+/*********** HUB SECTION ***********/
+
+
+.hub-section {
+    background-color: #007bff;
+}
+
+.shop-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    overflow: hidden;
+    height: 120px;
+}
+
+.card-link {
+    margin: auto 10px;
+}
+
+.card-link a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.box-card-img {
+    width: 30px;
+    margin: auto 10px;
+    transition: 1.5s;
+}
+
+.box-card-img img {
+    width: 100%;
+}
+
+.card-link .box-card-txt {
+    margin: 0;
+    position: relative;
+}
+
+/* card text pseudo elemnt for underline bar */
+.card-link .box-card-txt::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    /* Distanza dalla scritta */
+    bottom: -2px;
+    width: 0;
+    /* Spessore della linea */
+    height: 2px;
+    background-color: white;
+    transition: width 1s ease-in-out;
+}
+
+/* card hover effect */
+.card-link a:hover .box-card-img {
+    width: 50px;
+    transition: 1.5s;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.card-link a:hover .box-card-txt::after {
+    width: 100%;
+}
+
+/*********** FOOTER ***********/
+
+/* Boxlinks */
+.footer-link {
+    background-image: url(../public/img/footer-bg.jpg);
+}
+
+.footer-link .container {
+    position: relative;
+    overflow: hidden;
+}
+
+.dc-image-bg {
+    background-image: url(../public/img/dc-logo-bg.png);
+    width: 550px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: -100px;
+}
+
+.box-link {
+    color: white;
+    padding: 20px 0;
+    width: 45%;
+    text-align: left;
+    font-family: "Open Sans";
+}
+
+.link-col {
+    width: 33%;
+}
+
+.box-link h5 {
+    font-size: 15px;
+}
+
+.box-link ul {
+    font-size: 13px;
+    padding: 0;
+}
+
+.box-link a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.5s ease, text-shadow 0.5s ease, 0.5s;
+}
+
+/* boxlink hover effect */
+.box-link a:hover {
+    color: yellow;
+    text-shadow: 0 0 10px yellow, 0 0 20px orange, 0 0 30px red;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+
+/* social & subscription */
+.footer-social {
+    background-color: #303030;
+    font-family: "Open Sans";
+}
+
+footer .row {
+    height: 80px;
+}
+
+footer .col {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav {
+    height: 300px;
+    text-align: left;
+}
+
+.footer-nav h3 {
+    font-size: 15px;
+    color: white;
+}
+
+.footer-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a {
+    margin: 0;
+    padding: 0;
+    color: rgba(198, 198, 198, 0.833);
+}
+
+.btn-sign {
+    background: none;
+    color: white;
+    border-color: #0282f9;
+    height: 40px;
+    padding: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+
+.col-chl {
+    display: flex;
+    justify-content: end;
+}
+
+.col-chl p {
+    margin: auto 0;
+    color: #0282f9;
+}
+
+.channel {
+    display: flex;
+    margin: auto 0;
+
+}
+
+.single-channel {
+    padding-left: 10px;
+    margin-left: 10px;
+    width: 50px;
+}
+
+.single-channel img {
+    width: 100%;
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+}
+
+/* Tablet view */
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 120%;
+        width: 100%;
+        z-index: 1050;
+        background-color: #f8f9fa;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgba(128, 128, 128, 0.538);
+    }
+}

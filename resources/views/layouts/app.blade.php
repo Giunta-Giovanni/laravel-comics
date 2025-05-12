@@ -13,7 +13,7 @@
 
     <main>
         {{-- sezione hero --}}
-        <section class="hero-Section">
+        <section class="hero-section">
             @yield('hero_section')
         </section>
         {{-- sezione card --}}

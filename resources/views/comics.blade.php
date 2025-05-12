@@ -1,19 +1,46 @@
+
+    
     @extends('layouts.app')
     @section('hero_section')
-        questa è la hero
     @endsection
+    {{-- card section --}}
     @section('cards_section')
-        questa è la sezione delle card
-        @foreach ($comics as $comic)
-            @dump($comic)
-            <h1>{{ $comic['title'] }}</h1>
-        @endforeach
+    <div class="container">
+  {{-- row card  --}}
+        <div class="bk-box-card">
+
+            {{-- ciclo sulle card --}}
+            @foreach ($comics as $comic)
+
+                {{-- {{col card}} --}}
+                    <x-card>
+                        <x-slot:title>{{ $comic['series'] }}</x-slot>
+                        <x-slot:image>{{ $comic['thumb'] }}</x-slot>
+                    </x-card>
+
+            @endforeach
+
+        </div>
+
+            {{-- button Load More --}}
+            <div class="box-load-more">
+                <button>
+                    Load More
+                </button>
+        </div>
+
+    </div>
+      
     @endsection
     @section('hub_section')
-        questa è la sezione della hub
-    @endsection
-    @section('nav_section')
-        questa è la sezione della nav
+        <div class="container shop-box">
+                @foreach ($hub_links as $hub_link)
+                   <x-hub_link>
+                        <x-slot:text>{{ $hub_link['label'] }}</x-slot>
+                        <x-slot:image>{{ $hub_link['img'] }}</x-slot>
+                   </x-hub_link>
+                @endforeach
+            </div>
     @endsection
 
 
