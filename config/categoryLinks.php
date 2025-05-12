@@ -14,6 +14,10 @@ return [
         ['id' => 11, 'text' => 'Contact Us', 'url' => '#', 'current' => false],
     ],
     'category2' => [
+        ['id' => 1, 'text' => 'Shop DC', 'url' => '#', 'current' => false],
+        ['id' => 2, 'text' => 'Shop DC Collectibles', 'url' => '#', 'current' => false],
+    ],
+    'category3' => [
         ['id' => 1, 'text' => 'Characters', 'url' => '#', 'current' => false],
         ['id' => 2, 'text' => 'Comics', 'url' => '#', 'current' => false],
         ['id' => 3, 'text' => 'Movies', 'url' => '#', 'current' => false],
@@ -21,11 +25,6 @@ return [
         ['id' => 5, 'text' => 'Games', 'url' => '#', 'current' => false],
         ['id' => 6, 'text' => 'Videos', 'url' => '#', 'current' => false],
         ['id' => 7, 'text' => 'News', 'url' => '#', 'current' => false],
-    ],
-
-    'category3' => [
-        ['id' => 1, 'text' => 'Shop DC', 'url' => '#', 'current' => false],
-        ['id' => 2, 'text' => 'Shop DC Collectibles', 'url' => '#', 'current' => false],
     ],
 
     'category4' => [
