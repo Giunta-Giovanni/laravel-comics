@@ -23,17 +23,16 @@ __MILESTONE__
     2. resources/views/partials/footer.blade.php√
 - Utilizzo della direttiva @yield('content') per gestire i contenuti dinamici.√
 
-# Milestone 3 - Creazione della rotta principale
+# Milestone 3 - Creazione della rotta principale√
 - Aggiunta della rotta nel file routes/web.php per la pagina principale /comics.√
 <!-- - Creazione controller (es. ComicController) e metodo index. -->
 
-# Milestone 4 - Recupero dati da config/comics.php
+# Milestone 4 - Recupero dati da config/comics.php√
 - Creazione file config/comics.php e inserimento array fornito.√
 <!-- - Recupero dati con config('comics') all’interno del controller. -->
 
 # Milestone 5 - Visualizzazione lista fumetti
-- Creazione view resources/views/comics/index.blade.php.
-- Ciclo @foreach per stampare i fumetti.
+- Ciclo @foreach per stampare i fumetti.√
 - Strutturazione HTML/CSS base per layout a griglia.
 
 # Milestone 6 - Integrazione e compilazione SASS

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     {{-- header --}}
@@ -17,7 +18,7 @@
         </section>
         {{-- sezione card --}}
         <section class="cards-section">
-            @yield('cards_sectione')
+            @yield('cards_section')
         </section>
         {{-- sezione hub  --}}
         <section class="hub-section">
