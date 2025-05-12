@@ -7,8 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+    {{-- header --}}
     @include('partials.header')
-    @yield('main')
+
+    <main>
+        {{-- sezione hero --}}
+        <section class="hero-Section">
+            @yield('hero_section')
+        </section>
+        {{-- sezione card --}}
+        <section class="cards-section">
+            @yield('cards_sectione')
+        </section>
+        {{-- sezione hub  --}}
+        <section class="hub-section">
+            @yield('hub_section')
+        </section>
+        {{-- sezione nav  --}}
+        <section class="nav-section">
+            @yield('nav_section')
+        </section>
+    </main>
+    
+    {{-- footer --}}
     @include('partials.footer')
     
 </body>
